@@ -58,7 +58,6 @@ class Question(object):
     def __init__(self, question, answer):
         self.question = question
         self.answer = answer
-        self.qa_pair = {self.question: self.answer}
 
     def ask_and_evaluate(self):
         user_answer = raw_input(self.question + " ")
